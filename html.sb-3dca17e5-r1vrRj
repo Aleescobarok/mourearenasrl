@@ -14,18 +14,17 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
        (function(){
-          emailjs.init("Yservice_6s7pngk"); // Reemplaza "YOUR_USER_ID" con tu user_id de EmailJS
+          emailjs.init("YOUR_USER_ID"); // Reemplaza "YOUR_USER_ID" con tu user_id de EmailJS
        })();
     </script>
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MK9J2HW5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'GTM-MK9J2HW5');
     </script>
-    
 </head>
 <body>
     <header>
@@ -183,7 +182,7 @@
                 <label for="mensaje">Mensaje:</label><br>
                 <textarea id="mensaje" name="mensaje" required></textarea><br>
                 <input type="submit" value="Enviar">
-            </form>                       
+            </form>
         </div>
     </section>
     <footer>
