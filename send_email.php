@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
-    $mensaje = $_POST['mensaje'];
+    $nombre = htmlspecialchars($_POST['nombre']);
+    $email = htmlspecialchars($_POST['email']);
+    $telefono = htmlspecialchars($_POST['telefono']);
+    $mensaje = htmlspecialchars($_POST['mensaje']);
 
     $to = "Alejandroescobar@mourearena.com"; 
     $subject = "Consulta desde la página web";
@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "<script>alert('Error al enviar el mensaje. Inténtelo de nuevo más tarde.'); window.location.href = 'index.html';</script>";
     }
+} else {
+    echo "<script>alert('Método de solicitud no válido.'); window.location.href = 'index.html';</script>";
 }
 ?>
 
