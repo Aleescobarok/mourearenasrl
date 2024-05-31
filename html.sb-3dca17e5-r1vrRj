@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-       (function(){
-          emailjs.init("service_eyh4y08"); // Reemplaza "YOUR_USER_ID" con tu user_id de EmailJS
-       })();
+      emailjs.init('service_6s7pngk'); // Reemplaza 'mw6nzoNA66RypIXg8' con tu user_id de EmailJS
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MK9J2HW5"></script>
@@ -36,7 +34,6 @@
                     <li><a href="#empresa">Empresa</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#productos">Productos</a></li>
-                    
                     <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -182,7 +179,7 @@
                 <label for="mensaje">Mensaje:</label><br>
                 <textarea id="mensaje" name="mensaje" required></textarea><br>
                 <input type="submit" value="Enviar">
-            </form>
+            </form>                       
         </div>
     </section>
     <footer>
@@ -301,7 +298,7 @@
             // EmailJS integration
             $('#contact-form').on('submit', function(event) {
                 event.preventDefault();
-                emailjs.sendForm('service_6s7pngk', 'MoureArenaPage', this)
+                emailjs.sendForm('service_6s7pngk', 'template_qyvws2y', this)
                     .then(function(response) {
                         alert('Mensaje enviado, nos contactaremos con usted a la brevedad!');
                         window.location.href = 'index.html';
