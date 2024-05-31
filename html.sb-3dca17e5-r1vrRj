@@ -100,73 +100,37 @@
                 <div class="product">
                     <img src="images/baguette_grande.jpg" alt="Baguette grande" class="enlargeable">
                     <h3>Baguette grande</h3>
-                    <p>Descripción del producto, kgs, refrigeración y tiempo de horneado.</p>
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE&summary=YOUR_SUMMARY&source=YOUR_SOURCE" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p>Cocido o Pre-cocido</p>
+
                 </div>
                 <div class="product">
                     <img src="images/frances_chico.jpg" alt="Francés chico" class="enlargeable">
                     <h3>Francés chico</h3>
-                    <p>Descripción del producto, kgs, refrigeración y tiempo de horneado.</p>
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE&summary=YOUR_SUMMARY&source=YOUR_SOURCE" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p>Cocido o Pre-cocido</p>
+                   
                 </div>
                 <div class="product">
                     <img src="images/flauta.jpg" alt="Flauta" class="enlargeable">
                     <h3>Flauta</h3>
-                    <p>Descripción del producto, kgs, refrigeración y tiempo de horneado.</p>
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE&summary=YOUR_SUMMARY&source=YOUR_SOURCE" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p>Cocido o Pre-cocido</p>
+                    
                 </div>
                 <div class="product">
                     <img src="images/minion.jpg" alt="Miñón" class="enlargeable">
                     <h3>Miñón</h3>
-                    <p>Descripción del producto, kgs, refrigeración y tiempo de horneado.</p>
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE&summary=YOUR_SUMMARY&source=YOUR_SOURCE" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p>Cocido o Pre-cocido</p>
+                   
                 </div>
                 <div class="product">
                     <img src="images/panes_de_salvado.jpg" alt="Panes de salvado" class="enlargeable">
                     <h3>Panes de salvado</h3>
-                    <p>Descripción del producto, kgs, refrigeración y tiempo de horneado.</p>
-                    <div class="social-share">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/intent/tweet?url=YOUR_URL&text=Check%20this%20out!" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL&title=YOUR_TITLE&summary=YOUR_SUMMARY&source=YOUR_SOURCE" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p>Cocido o Pre-cocido</p>
+                   
                 </div>
             </div>
         </div>
     </section>
-    <section id="equipo" class="fade-in">
-        <div class="container">
-            <h2>Nuestro Equipo</h2>
-            <div class="team">
-                <div class="team-member">
-                    <img src="images/team1.jpg" alt="Paula Andrea Moure">
-                    <h3>Paula Andrea Moure</h3>
-                    <p>CEO</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/team2.jpg" alt="Escobar Arena Alejandro">
-                    <h3>Escobar Arena Alejandro</h3>
-                    <p>Socio comercial</p>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <section id="testimonios" class="fade-in">
         <div class="container">
             <h2>Testimonios</h2>
@@ -222,16 +186,7 @@
             </form>                       
         </div>
     </section>
-    <section id="suscripcion" class="fade-in">
-        <div class="container">
-            <h2>Suscríbete a nuestro boletín</h2>
-            <form action="https://YOUR_ACCOUNT.usX.list-manage.com/subscribe/post?u=YOUR_U&amp;id=YOUR_ID" method="post" target="_blank">
-                <label for="suscripcion-email">Email:</label><br>
-                <input type="email" id="suscripcion-email" name="EMAIL" required><br>
-                <input type="submit" value="Suscribirse">
-            </form>
-        </div>
-    </section>
+   
     <footer>
         <div class="container">
             <p>&copy; 2024 Moure Arena SRL. Todos los derechos reservados.</p>
