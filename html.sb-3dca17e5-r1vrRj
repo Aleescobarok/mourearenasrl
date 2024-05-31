@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Yservice_6s7pngk"); // Reemplaza "YOUR_USER_ID" con tu user_id de EmailJS
+       })();
+    </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'YOUR_TRACKING_ID');
+      gtag('config', 'GTM-MK9J2HW5');
     </script>
-    <!-- End Google Analytics -->
+    
 </head>
 <body>
     <header>
@@ -101,36 +107,30 @@
                     <img src="images/baguette_grande.jpg" alt="Baguette grande" class="enlargeable">
                     <h3>Baguette grande</h3>
                     <p>Cocido o Pre-cocido</p>
-
                 </div>
                 <div class="product">
                     <img src="images/frances_chico.jpg" alt="Francés chico" class="enlargeable">
                     <h3>Francés chico</h3>
                     <p>Cocido o Pre-cocido</p>
-                   
                 </div>
                 <div class="product">
                     <img src="images/flauta.jpg" alt="Flauta" class="enlargeable">
                     <h3>Flauta</h3>
                     <p>Cocido o Pre-cocido</p>
-                    
                 </div>
                 <div class="product">
                     <img src="images/minion.jpg" alt="Miñón" class="enlargeable">
                     <h3>Miñón</h3>
                     <p>Cocido o Pre-cocido</p>
-                   
                 </div>
                 <div class="product">
                     <img src="images/panes_de_salvado.jpg" alt="Panes de salvado" class="enlargeable">
                     <h3>Panes de salvado</h3>
                     <p>Cocido o Pre-cocido</p>
-                   
                 </div>
             </div>
         </div>
     </section>
-   
     <section id="testimonios" class="fade-in">
         <div class="container">
             <h2>Testimonios</h2>
@@ -173,7 +173,7 @@
             <p>Teléfono: (011) 1234-5678</p>
             <p>Email: info@mourearena.com.ar</p>
             <div id="map"></div>
-            <form action="send_email.php" method="post">
+            <form id="contact-form">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre" required><br>
                 <label for="email">Email:</label><br>
@@ -186,7 +186,6 @@
             </form>                       
         </div>
     </section>
-   
     <footer>
         <div class="container">
             <p>&copy; 2024 Moure Arena SRL. Todos los derechos reservados.</p>
@@ -299,6 +298,18 @@
                     map: map
                 });
             }
+
+            // EmailJS integration
+            $('#contact-form').on('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_6s7pngk', 'MoureArenaPage', this)
+                    .then(function(response) {
+                        alert('Mensaje enviado, nos contactaremos con usted a la brevedad!');
+                        window.location.href = 'index.html';
+                    }, function(error) {
+                        alert('Error al enviar el mensaje. Inténtelo de nuevo más tarde.');
+                    });
+            });
         });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
