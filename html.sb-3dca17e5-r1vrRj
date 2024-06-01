@@ -181,7 +181,7 @@
                 <label for="message">Mensaje:</label><br>
                 <textarea id="message" name="message" required></textarea><br>
                 <input type="submit" value="Enviar">
-            </form>                                        
+            </form>                                         
         </div>
     </section>
     <footer>
