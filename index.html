@@ -300,7 +300,7 @@
             // EmailJS integration
             $('#contact-form').on('submit', function(event) {
                 event.preventDefault();
-                emailjs.sendForm('service_6s7pngk', 'template_qyvws2y', this) // Asegúrate de que template_xxx sea el correcto
+                emailjs.sendForm('service_6s7pngk', 'template_qyvws2y', this)
                     .then(function(response) {
                         alert('Mensaje enviado, nos contactaremos con usted a la brevedad!');
                         window.location.href = 'index.html';
@@ -326,4 +326,3 @@
     <!--End of Tawk.to Script-->
 </body>
 </html>
-
