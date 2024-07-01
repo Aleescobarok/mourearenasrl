@@ -11,9 +11,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    // EmailJS integration
+    // Inicializar EmailJS
+    emailjs.init('MoureArenaPage'); // Reemplaza con tu user_id de EmailJS
+
+    // Integración con EmailJS
     $('#contact-form').on('submit', function(event) {
         event.preventDefault();
+        
+        // Enviar el formulario
         emailjs.sendForm('service_6s7pngk', 'template_qyvws2y', this)
             .then(function(response) {
                 alert('Mensaje enviado, nos contactaremos con usted a la brevedad!');
