@@ -208,6 +208,15 @@ form.dark-mode input[type="submit"]:hover {
 }
 
 /* Servicios */
+.services {
+    padding: 40px 0;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    color: gray;
+}
+
 .services .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #ddd;
@@ -215,7 +224,8 @@ form.dark-mode input[type="submit"]:hover {
     background-color: #f9f9f9;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .services .card:hover {
@@ -225,13 +235,14 @@ form.dark-mode input[type="submit"]:hover {
 
 .services .card i {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: gray;
 }
 
 .services .card h3 {
     color: gray;
     margin-bottom: 15px;
+    font-size: 1.5em;
 }
 
 .services .card p {
@@ -239,6 +250,25 @@ form.dark-mode input[type="submit"]:hover {
     font-size: 1em;
     line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+    .services .card {
+        padding: 15px;
+    }
+
+    .services .card i {
+        font-size: 30px;
+    }
+
+    .services .card h3 {
+        font-size: 1.2em;
+    }
+
+    .services .card p {
+        font-size: 0.9em;
+    }
+}
+
 
 .team {
     display: flex;
