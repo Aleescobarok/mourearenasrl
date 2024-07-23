@@ -302,7 +302,7 @@ form.dark-mode input[type="submit"]:hover {
 
 #faq .btn-link:hover {
     text-decoration: none;
-    color: #007bff;
+    color: gray;
 }
 
 #faq .btn-link:focus,
@@ -312,7 +312,7 @@ form.dark-mode input[type="submit"]:hover {
 }
 
 #faq .btn-link:not(.collapsed) {
-    color: #007bff;
+    color: gray;
 }
 
 #faq .card-header button:focus {
@@ -441,8 +441,8 @@ a:hover {
 }
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #0056b3;
+    --primary-color: gray;
+    --secondary-color: gray;
     --background-color: #f8f8f8;
     --text-color: #333;
 }
@@ -583,7 +583,7 @@ form input[type="submit"] {
 }
 
 .hero-section .btn {
-    background-color: #007bff;
+    background-color: gray;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -593,7 +593,7 @@ form input[type="submit"] {
 }
 
 .hero-section .btn:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }
 
 .parallax-section {
@@ -653,7 +653,7 @@ form input[type="submit"] {
     bottom: 30px;
     right: 30px;
     display: none;
-    background-color: #007bff;
+    background-color: gray;
     color: white;
     padding: 10px 15px;
     border-radius: 50%;
@@ -663,6 +663,6 @@ form input[type="submit"] {
 }
 
 #back-to-top:hover {
-    background-color: #0056b3;
+    background-color: gray;
 }
 
