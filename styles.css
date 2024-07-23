@@ -563,7 +563,7 @@ form input[type="submit"] {
 }
 
 .hero-section {
-    background: url('images/logo.jpg') no-repeat center center/cover;
+    background-color: gray; /* Fondo de la sección en color gris */
     color: white;
     height: 100vh;
     display: grid;
@@ -575,19 +575,19 @@ form input[type="submit"] {
 }
 
 .hero-section h1 {
-    color: gray;
+    color: gray; /* Color del texto en gris */
     font-size: 3em;
     margin-bottom: 0.5em;
 }
 
 .hero-section p {
-    color: gray;
+    color: gray; /* Color del texto en gris */
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
 .hero-section .btn {
-    background-color: gray;
+    background-color: gray; /* Color del botón en gris */
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -597,8 +597,9 @@ form input[type="submit"] {
 }
 
 .hero-section .btn:hover {
-    background-color: gray;
+    background-color: darkgray; /* Color del botón en gris oscuro al pasar el ratón */
 }
+
 
 .parallax-section {
     background-image: url('images/parallax.jpg');
