@@ -15,17 +15,17 @@
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function() {
-        emailjs.init('mw6nzoNA66RypIXg8'); // Reemplaza con tu user_id de EmailJS
-      })();
+        (function() {
+            emailjs.init('mw6nzoNA66RypIXg8'); // Reemplaza con tu user_id de EmailJS
+        })();
     </script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MK9J2HW5"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GTM-MK9J2HW5');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-MK9J2HW5');
     </script>
 </head>
 <body>
@@ -64,17 +64,7 @@
             </div>
         </nav>
     </header>
-
-    <section id="hero" class="hero-section">
-        <div class="container text-center">
-            <img src="images/logo.jpg" alt="Logo de Moure Arena SRL" style="max-width: 200px; margin-bottom: 20px;">
-            <h1>Bienvenido a Moure Panificados</h1>
-            <p>Líder en productos panificados de alta calidad</p>
-            <a href="#productos" class="btn btn-primary">Ver Productos</a>
-        </div>
-    </section>
     
-
     <section id="inicio">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -103,14 +93,7 @@
             </a>
         </div>
     </section>
-
-    <section class="parallax-section">
-        <div class="parallax-content">
-            <h2>Calidad y Tradición</h2>
-            <p>Desde 2024, comprometidos con la excelencia.</p>
-        </div>
-    </section>
-
+    
     <section id="empresa" class="fade-in py-5">
         <div class="container">
             <h2>Nuestra Empresa</h2>
@@ -123,47 +106,52 @@
             <p>Nuestra planta industrial está diseñada según las concepciones más modernas y ajustada a las normas medioambientales, además de cumplir con estrictas normas de seguridad industrial y alimenticia. El alto nivel de tecnología nos permite producir a gran escala, optimizando todas las áreas de producción desde la entrada de materias primas. Desarrollamos, innovamos y mejoramos constantemente nuestros productos y procesos productivos para satisfacer las distintas necesidades de nuestros clientes y consumidores.</p>
         </div>
     </section>
-
+    
     <section id="servicios" class="fade-in py-5">
         <div class="container">
             <h2>Servicios</h2>
-            <div class="row">
+            <div class="row services">
                 <div class="col-md-4">
-                    <div class="service">
-                        <i class="fas fa-truck fa-3x mb-3"></i>
-                        <h3>Distribución</h3>
-                        <p>Ofrecemos un servicio de distribución eficiente y a medida para asegurar que nuestros productos lleguen frescos a nuestros clientes.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-truck fa-3x mb-3"></i>
+                            <h3 class="card-title">Distribución</h3>
+                            <p class="card-text">Ofrecemos un servicio de distribución eficiente y a medida para asegurar que nuestros productos lleguen frescos a nuestros clientes.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service">
-                        <i class="fas fa-leaf fa-3x mb-3"></i>
-                        <h3>Sostenibilidad</h3>
-                        <p>Nuestros procesos están diseñados para minimizar el impacto ambiental, utilizando prácticas sostenibles en toda nuestra cadena de producción.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-leaf fa-3x mb-3"></i>
+                            <h3 class="card-title">Sostenibilidad</h3>
+                            <p class="card-text">Nuestros procesos están diseñados para minimizar el impacto ambiental, utilizando prácticas sostenibles en toda nuestra cadena de producción.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="service">
-                        <i class="fas fa-user-shield fa-3x mb-3"></i>
-                        <h3>Calidad</h3>
-                        <p>Garantizamos productos de alta calidad a través de rigurosos controles y certificaciones que cumplen con todas las normativas.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3 class="card-title">Calidad</h3>
+                            <p class="card-text">Garantizamos productos de alta calidad a través de rigurosos controles y certificaciones que cumplen con todas las normativas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-
     <section id="productos" class="fade-in py-5">
         <div class="container">
             <h2>Productos</h2>
-            <div class="row">
+            <div class="row product-grid">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="images/baguette_grande.jpg" class="card-img-top" alt="Baguette grande">
                         <div class="card-body text-center">
                             <h3 class="card-title">Baguette grande</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -172,7 +160,7 @@
                         <img src="images/frances_chico.jpg" class="card-img-top" alt="Francés chico">
                         <div class="card-body text-center">
                             <h3 class="card-title">Francés chico</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -181,7 +169,7 @@
                         <img src="images/flauta.jpg" class="card-img-top" alt="Flauta">
                         <div class="card-body text-center">
                             <h3 class="card-title">Flauta</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +178,7 @@
                         <img src="images/minion.jpg" class="card-img-top" alt="Miñón">
                         <div class="card-body text-center">
                             <h3 class="card-title">Miñón</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -199,7 +187,7 @@
                         <img src="images/panes_de_salvado.jpg" class="card-img-top" alt="Panes de salvado">
                         <div class="card-body text-center">
                             <h3 class="card-title">Panes de salvado</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +196,7 @@
                         <img src="images/medialunamanteca.jpg" class="card-img-top" alt="Medialuna de Manteca">
                         <div class="card-body text-center">
                             <h3 class="card-title">Medialuna de Manteca</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
@@ -217,14 +205,14 @@
                         <img src="images/criollitos.jpg" class="card-img-top" alt="Criollitos de grasa">
                         <div class="card-body text-center">
                             <h3 class="card-title">Criollitos de grasa</h3>
-                            <p class="card-text">Cocido o Pre-cocido</p>
+                            <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <section id="testimonios" class="fade-in py-5">
         <div class="container">
             <h2>Testimonios</h2>
@@ -257,7 +245,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="faq" class="fade-in py-5">
         <div class="container">
             <h2 class="text-center mb-4">Preguntas Frecuentes (FAQ)</h2>
@@ -307,7 +295,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="contacto" class="fade-in py-5 bg-light">
         <div class="container">
             <h2>Contacto</h2>
@@ -336,7 +324,7 @@
             </form>
         </div>
     </section>
-
+    
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2024 Moure Arena SRL. Todos los derechos reservados.</p>
@@ -348,7 +336,7 @@
             </div>
         </div>
     </footer>
-
+    
     <a href="#" id="back-to-top" class="btn btn-primary rounded-circle"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Modal for enlarged images -->
@@ -356,7 +344,7 @@
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
     </div>
-
+    
     <script>
         $(document).ready(function() {
             var offset = 250;
@@ -464,7 +452,6 @@
             });
         });
     </script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -479,7 +466,22 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    
+    <section id="hero" class="hero-section">
+        <div class="container text-center">
+            <h1>Bienvenido a Moure Arena SRL</h1>
+            <p>Líder en productos panificados de alta calidad</p>
+            <a href="#productos" class="btn btn-primary">Ver Productos</a>
+        </div>
+    </section>
+    
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>Calidad y Tradición</h2>
+            <p>Desde 2024, comprometidos con la excelencia.</p>
+        </div>
+    </section>
+    
 </body>
 </html>
-
 

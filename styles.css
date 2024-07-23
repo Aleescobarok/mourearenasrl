@@ -9,7 +9,7 @@ body {
 
 body.dark-mode {
     background-color: #121212;
-    color: #333;
+    color: #e0e0e0;
 }
 
 header {
@@ -25,15 +25,15 @@ header {
 }
 
 header .navbar-brand {
-    color: white; /* Cambia a cualquier color que desees */
-    font-size: 1.5em; /* Ajusta el tamaño de la fuente */
-    font-weight: bold; /* Cambia el peso de la fuente si es necesario */
-    text-transform: uppercase; /* Transforma el texto a mayúsculas */
-    text-align: left; /* Alinea el texto a la izquierda */
+    color: gray;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 header .navbar-brand:hover {
-    color: #ddd; /* Cambia el color cuando se pasa el ratón por encima */
+    color: #ddd;
 }
 
 header .navbar-nav .nav-item .nav-link {
@@ -42,7 +42,7 @@ header .navbar-nav .nav-item .nav-link {
 }
 
 header .navbar-nav .nav-item .nav-link:hover {
-    color: gray;
+    color: #ddd;
 }
 
 header .navbar-dark.scrolled {
@@ -61,7 +61,7 @@ header .navbar-dark.scrolled {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 100px; /* Ajustar para evitar superposición con el header */
+    padding-top: 100px;
 }
 
 section {
@@ -84,7 +84,7 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: gray;
+    color: #ddd;
 }
 
 .carousel-inner img {
@@ -102,7 +102,7 @@ footer .social-icons a:hover {
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre filas */
+    margin-bottom: 20px;
 }
 
 .card-img-top {
@@ -208,38 +208,37 @@ form.dark-mode input[type="submit"]:hover {
 }
 
 /* Servicios */
-.services .service {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+.services .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.services .service i {
+.services .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.services .card i {
     font-size: 40px;
     margin-bottom: 10px;
     color: gray;
 }
 
-.services .service h3 {
+.services .card h3 {
     color: gray;
     margin-bottom: 15px;
 }
 
-.services .service p {
+.services .card p {
     color: gray;
     font-size: 1em;
     line-height: 1.5;
 }
-
-.services .service:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 
 .team {
     display: flex;
@@ -375,9 +374,6 @@ form.dark-mode input[type="submit"]:hover {
     display: block;
     width: 80%;
     max-width: 700px;
-}
-
-.modal-content {
     animation: zoom 0.6s;
 }
 
@@ -455,7 +451,7 @@ a:hover {
 
 :root {
     --primary-color: gray;
-    --secondary-color: gray;
+    --secondary-color: darkgray;
     --background-color: #f8f8f8;
     --text-color: #333;
 }
@@ -471,7 +467,7 @@ button, input[type="submit"] {
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
-    color: gray;
+    color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -576,8 +572,8 @@ form input[type="submit"] {
 }
 
 .hero-section {
-    background-color: white; /* Fondo de la sección en color gris */
-    color: red;
+    background-color: white;
+    color: gray;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -588,19 +584,19 @@ form input[type="submit"] {
 }
 
 .hero-section h1 {
-    color: gray; /* Color del texto en gris */
+    color: gray;
     font-size: 3em;
     margin-bottom: 0.5em;
 }
 
 .hero-section p {
-    color: gray; /* Color del texto en gris */
+    color: gray;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
 .hero-section .btn {
-    background-color: gray; /* Color del botón en gris */
+    background-color: gray;
     border: none;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -610,9 +606,8 @@ form input[type="submit"] {
 }
 
 .hero-section .btn:hover {
-    background-color: darkgray; /* Color del botón en gris oscuro al pasar el ratón */
+    background-color: darkgray;
 }
-
 
 .parallax-section {
     background-image: url('images/parallax.jpg');
@@ -681,6 +676,6 @@ form input[type="submit"] {
 }
 
 #back-to-top:hover {
-    background-color: gray;
+    background-color: darkgray;
 }
 
