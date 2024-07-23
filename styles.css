@@ -307,7 +307,7 @@ form.dark-mode input[type="submit"]:hover {
 
 #faq .btn-link:hover {
     text-decoration: none;
-    color: #007bff;
+    color: #fff;
 }
 
 #faq .btn-link:focus, 
@@ -317,7 +317,7 @@ form.dark-mode input[type="submit"]:hover {
 }
 
 #faq .btn-link:not(.collapsed) {
-    color: #007bff;
+    color: #fff;
 }
 
 #faq .card-header button:focus {
@@ -446,27 +446,31 @@ a:hover {
 }
 
 :root {
-    --primary-color: #333;
-    --secondary-color: #555;
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
     --background-color: #f8f8f8;
     --text-color: #333;
 }
 
-body.dark-mode {
-    --primary-color: #e0e0e0;
-    --secondary-color: #ddd;
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-}
-
-header, footer {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
-
-section {
+body {
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+.hero-section .btn,
+button, input[type="submit"] {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover,
+button:hover, input[type="submit"]:hover {
+    background-color: var(--secondary-color);
 }
 
 button, input[type="submit"] {
@@ -570,3 +574,114 @@ form input[type="submit"] {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.hero-section {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.hero-section .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.parallax-section {
+    background-image: url('images/parallax.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.parallax-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.parallax-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.parallax-content p {
+    font-size: 1.2em;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+}
+
+.navbar {
+    transition: background-color 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-dark.scrolled {
+    background-color: #333;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.testimonial.dark-mode {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+

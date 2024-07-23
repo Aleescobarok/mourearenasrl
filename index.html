@@ -31,33 +31,42 @@
     
     
     <body>
-        <header class="bg-dark text-white text-center py-5">
-            <div class="container">
-                <h1>MOURE PANIFICADOS</h1>
-                <nav class="navbar navbar-expand-lg navbar-dark">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">MOURE PANIFICADOS</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#empresa">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonios">Testimonios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
                         </ul>
                     </div>
-                    <div id="theme-toggle" class="ml-2"><i class="fas fa-moon"></i></div>
-                    <div id="search-toggle" class="ml-2"><i class="fas fa-search"></i></div>
-                </nav>
-                <div id="search-bar" class="mt-3">
-                    <input type="text" id="search-input" placeholder="Buscar..." class="form-control d-inline-block w-75">
-                    <button id="search-button" class="btn btn-primary d-inline-block"><i class="fas fa-search"></i></button>
                 </div>
-            </div>
+            </nav>
         </header>
+        
         <section id="inicio">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -98,25 +107,31 @@
                 <p>Nuestra planta industrial está diseñada según las concepciones más modernas y ajustada a las normas medioambientales, además de cumplir con estrictas normas de seguridad industrial y alimenticia. El alto nivel de tecnología nos permite producir a gran escala, optimizando todas las áreas de producción desde la entrada de materias primas. Desarrollamos, innovamos y mejoramos constantemente nuestros productos y procesos productivos para satisfacer las distintas necesidades de nuestros clientes y consumidores.</p>
             </div>
         </section>
-        <section id="servicios" class="fade-in py-5 bg-light">
+        <section id="servicios" class="fade-in py-5">
             <div class="container">
                 <h2>Servicios</h2>
                 <div class="row">
-                    <div class="col-md-4 text-center">
-                        <i class="fas fa-truck fa-3x"></i>
-                        <h3>Distribución</h3>
-                        <p>Ofrecemos un servicio de distribución eficiente y a medida para asegurar que nuestros productos lleguen frescos a nuestros clientes.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <i class="fas fa-truck fa-3x mb-3"></i>
+                            <h3>Distribución</h3>
+                            <p>Ofrecemos un servicio de distribución eficiente y a medida para asegurar que nuestros productos lleguen frescos a nuestros clientes.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <i class="fas fa-leaf fa-3x"></i>
-                        <h3>Sostenibilidad</h3>
-                        <p>Nuestros procesos están diseñados para minimizar el impacto ambiental, utilizando prácticas sostenibles en toda nuestra cadena de producción.</p>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <i class="fas fa-leaf fa-3x mb-3"></i>
+                            <h3>Sostenibilidad</h3>
+                            <p>Nuestros procesos están diseñados para minimizar el impacto ambiental, utilizando prácticas sostenibles en toda nuestra cadena de producción.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <i class="fas fa-user-shield fa-3x"></i>
-                        <h3>Calidad</h3>
-                        <p>Garantizamos productos de alta calidad a través de rigurosos controles y certificaciones que cumplen con todas las normativas.</p>
-                    </div>
+                    <div class="col-md-4">
+                        <div class="service">
+                            <i class="fas fa-user-shield fa-3x mb-3"></i>
+                            <h3>Calidad</h3>
+                            <p>Garantizamos productos de alta calidad a través de rigurosos controles y certificaciones que cumplen con todas las normativas.</p>
+                        </div>
+
                 </div>
             </div>
             <section id="productos" class="fade-in py-5">
@@ -128,7 +143,7 @@
                                 <img src="images/baguette_grande.jpg" class="card-img-top" alt="Baguette grande">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Baguette grande</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +152,7 @@
                                 <img src="images/frances_chico.jpg" class="card-img-top" alt="Francés chico">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Francés chico</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +161,7 @@
                                 <img src="images/flauta.jpg" class="card-img-top" alt="Flauta">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Flauta</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +170,7 @@
                                 <img src="images/minion.jpg" class="card-img-top" alt="Miñón">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Miñón</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +179,7 @@
                                 <img src="images/panes_de_salvado.jpg" class="card-img-top" alt="Panes de salvado">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Panes de salvado</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +188,7 @@
                                 <img src="images/medialunamanteca.jpg" class="card-img-top" alt="Medialuna de Manteca">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Medialuna de Manteca</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +197,7 @@
                                 <img src="images/criollitos.jpg" class="card-img-top" alt="Criollitos de grasa">
                                 <div class="card-body text-center">
                                     <h3 class="card-title">Criollitos de grasa</h3>
-                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                    <p class="card-text">Cocido/Pre-cocido/Congelado</p>
                                 </div>
                             </div>
                         </div>
@@ -191,38 +206,39 @@
             </section>
             
 
-        <section id="testimonios" class="fade-in py-5 bg-light">
-            <div class="container">
-                <h2>Testimonios</h2>
-                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="testimonial text-center">
-                                <p>"Los productos de Moure Arena SRL son de excelente calidad. Estamos muy satisfechos con su servicio."</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial text-center">
-                                <p>"La atención y la rapidez en la entrega es destacable. Recomiendo Moure Arena SRL a todos."</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial text-center">
-                                <p>"Innovación y calidad en cada uno de sus productos. Moure Arena SRL es nuestra opción preferida."</p>
-                            </div>
-                        </div>
+        <section id="testimonios" class="fade-in py-5">
+    <div class="container">
+        <h2>Testimonios</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <p>"Los productos de Moure Arena SRL son de excelente calidad. Estamos muy satisfechos con su servicio."</p>
                     </div>
-                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <p>"La atención y la rapidez en la entrega es destacable. Recomiendo Moure Arena SRL a todos."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <p>"Innovación y calidad en cada uno de sus productos. Moure Arena SRL es nuestra opción preferida."</p>
+                    </div>
                 </div>
             </div>
-        </section>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
         <section id="faq" class="fade-in py-5">
             <div class="container">
                 <h2 class="text-center mb-4">Preguntas Frecuentes (FAQ)</h2>
@@ -442,6 +458,23 @@
         })();
         </script>
         <!--End of Tawk.to Script-->
+
+        <section id="hero" class="hero-section">
+            <div class="container text-center">
+                <h1>Bienvenido a Moure Arena SRL</h1>
+                <p>Líder en productos panificados de alta calidad</p>
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+            </div>
+        </section>
+        
+        <section class="parallax-section">
+            <div class="parallax-content">
+                <h2>Calidad y Tradición</h2>
+                <p>Desde 2024, comprometidos con la excelencia.</p>
+            </div>
+        </section>
+        
+        
     </body>
     </html>
     

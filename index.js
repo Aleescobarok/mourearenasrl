@@ -131,12 +131,35 @@ $(document).ready(function() {
     // EmailJS integration
     $('#contact-form').on('submit', function(event) {
         event.preventDefault();
-        emailjs.sendForm('service_6s7pngk', 'template_qyvws2y', this)
-            .then(function(response) {
-                alert('Mensaje enviado, nos contactaremos con usted a la brevedad!');
-                window.location.href = 'index.html';
-            }, function(error) {
-                alert('Error al enviar el mensaje. Inténtelo de nuevo más tarde.');
-            });
+        emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Enviar Email';
+            alert('¡Mensaje enviado, nos contactaremos con usted a la brevedad!');
+        }, (err) => {
+            btn.value = 'Enviar Email';
+            alert(JSON.stringify(err));
+        });
+});
+
+// Fade-in animations
+function handleScroll() {
+    document.querySelectorAll('.fade-in').forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('in-view');
+        }
     });
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+});
+
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
 });
