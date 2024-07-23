@@ -572,6 +572,7 @@ form input[type="submit"] {
     align-items: center;
     justify-items: center;
     text-align: center;
+}
 
 .hero-section h1 {
     color: gray;
