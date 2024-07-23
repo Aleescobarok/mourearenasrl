@@ -9,12 +9,12 @@ body {
 
 body.dark-mode {
     background-color: #121212;
-    color: #e0e0e0;
+    color: #333;
 }
 
 header {
     background-color: #333;
-    color: white;
+    color: gray;
     padding: 20px 0;
     text-align: center;
     position: fixed;
@@ -29,12 +29,12 @@ header .navbar-brand {
 }
 
 header .navbar-nav .nav-item .nav-link {
-    color: white;
+    color: gray;
     transition: color 0.3s;
 }
 
 header .navbar-nav .nav-item .nav-link:hover {
-    color: #ddd;
+    color: gray;
 }
 
 header .navbar-dark.scrolled {
