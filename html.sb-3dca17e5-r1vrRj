@@ -168,6 +168,15 @@
                                 <p class="card-text">Cocido o Pre-cocido</p>
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/medialunamanteca.jpg" class="card-img-top" alt="medialunamanteca">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Medialuna de Manteca</h3>
+                                    <p class="card-text">Cocido o Pre-cocido</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
