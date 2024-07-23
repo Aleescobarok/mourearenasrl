@@ -175,11 +175,20 @@
                                     <h3 class="card-title">Medialuna de Manteca</h3>
                                     <p class="card-text">Cocido o Pre-cocido</p>
                                 </div>
+                               
+                         <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="images/criollitos.jpg" class="card-img-top" alt="Criollitos de grasa">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Criollitos de grasa</h3>
+                                            <p class="card-text">Cocido o Pre-cocido</p>
+                                        </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>            
+            </section>
+
         <section id="testimonios" class="fade-in py-5 bg-light">
             <div class="container">
                 <h2>Testimonios</h2>
