@@ -226,6 +226,10 @@ form.dark-mode input[type="submit"]:hover {
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
 }
 
 .services .card:hover {
@@ -249,6 +253,7 @@ form.dark-mode input[type="submit"]:hover {
     color: gray;
     font-size: 1em;
     line-height: 1.5;
+    margin-bottom: 0; /* Asegura que el texto no cause expansión adicional */
 }
 
 @media (max-width: 768px) {
@@ -268,6 +273,7 @@ form.dark-mode input[type="submit"]:hover {
         font-size: 0.9em;
     }
 }
+
 
 
 .team {
