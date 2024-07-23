@@ -573,11 +573,13 @@ form input[type="submit"] {
 }
 
 .hero-section h1 {
+    color: gray;
     font-size: 3em;
     margin-bottom: 0.5em;
 }
 
 .hero-section p {
+    color: gray;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
