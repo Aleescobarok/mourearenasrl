@@ -21,14 +21,24 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: background-color 0.5s;
+}
+
+header .navbar-brand {
+    font-weight: bold;
 }
 
 header .navbar-nav .nav-item .nav-link {
     color: white;
+    transition: color 0.3s;
 }
 
 header .navbar-nav .nav-item .nav-link:hover {
     color: #ddd;
+}
+
+header .navbar-dark.scrolled {
+    background-color: #333;
 }
 
 #theme-toggle, #search-toggle {
@@ -43,7 +53,7 @@ header .navbar-nav .nav-item .nav-link:hover {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 80px; /* Add padding to avoid header overlap */
+    padding-top: 100px; /* Ajustar para evitar superposición con el header */
 }
 
 section {
@@ -55,6 +65,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 footer .social-icons a {
@@ -83,7 +94,7 @@ footer .social-icons a:hover {
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
+    margin-bottom: 20px; /* Espacio entre filas */
 }
 
 .card-img-top {
@@ -121,22 +132,6 @@ footer .social-icons a:hover {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.product:hover {
-    transform: scale(1.05);
-}
-
-.product.dark-mode {
-    background-color: #2a2a2a;
-    border-color: #444;
 }
 
 form {
@@ -307,17 +302,17 @@ form.dark-mode input[type="submit"]:hover {
 
 #faq .btn-link:hover {
     text-decoration: none;
-    color: #fff;
+    color: #007bff;
 }
 
-#faq .btn-link:focus, 
+#faq .btn-link:focus,
 #faq .btn-link.collapsed:focus {
     outline: none;
     box-shadow: none;
 }
 
 #faq .btn-link:not(.collapsed) {
-    color: #fff;
+    color: #007bff;
 }
 
 #faq .card-header button:focus {
@@ -374,8 +369,8 @@ form.dark-mode input[type="submit"]:hover {
 }
 
 @keyframes zoom {
-    from {transform: scale(0);}
-    to {transform: scale(1);}
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 
 .close {
@@ -469,14 +464,6 @@ button, input[type="submit"] {
 }
 
 .hero-section .btn:hover,
-button:hover, input[type="submit"]:hover {
-    background-color: var(--secondary-color);
-}
-
-button, input[type="submit"] {
-    background-color: var(--primary-color);
-}
-
 button:hover, input[type="submit"]:hover {
     background-color: var(--secondary-color);
 }
@@ -637,14 +624,6 @@ form input[type="submit"] {
 .parallax-content p {
     font-size: 1.2em;
 }
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in.in-view {
-    opacity: 1;
-}
 
 .navbar {
     transition: background-color 0.5s;
@@ -669,19 +648,21 @@ form input[type="submit"] {
     }
 }
 
-.testimonial {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 10px auto;
-    width: 80%;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, border-color 0.3s;
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.testimonial.dark-mode {
-    background-color: #2a2a2a;
-    border-color: #444;
+#back-to-top:hover {
+    background-color: #0056b3;
 }
 
