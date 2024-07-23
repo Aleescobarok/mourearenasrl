@@ -563,14 +563,15 @@ form input[type="submit"] {
 }
 
 .hero-section {
-    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    background: url('images/logo.jpg') no-repeat center center/cover;
     color: white;
     height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     text-align: center;
-}
 
 .hero-section h1 {
     color: gray;
