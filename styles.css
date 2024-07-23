@@ -23,98 +23,31 @@ header {
     z-index: 1000;
 }
 
-header.dark-mode {
-    background-color: #1e1e1e;
+header .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+    color: #ddd;
+}
+
+#theme-toggle, #search-toggle {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#search-bar {
+    display: none;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 60px; /* Add padding to avoid header overlap */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#menu-toggle, #theme-toggle, #search-toggle {
-    display: none;
-    cursor: pointer;
-    margin-left: 15px;
-}
-
-#theme-toggle {
-    float: right;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-    nav ul.active {
-        display: flex;
-    }
-    #menu-toggle, #search-toggle {
-        display: block;
-    }
-}
-
-#search-bar {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#search-bar input {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-#search-bar button {
-    padding: 5px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
+    padding-top: 80px; /* Add padding to avoid header overlap */
 }
 
 section {
     padding: 40px 0;
-    background-color: white;
-    margin: 20px 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-section.dark-mode {
-    background-color: #1e1e1e;
-}
-
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s;
-}
-
-section.dark-mode h2 {
-    border-color: #e0e0e0;
 }
 
 footer {
@@ -122,20 +55,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-footer.dark-mode {
-    background-color: #1e1e1e;
-}
-
-footer .container {
-    width: 100%;
-    text-align: center;
-}
-
-footer .social-icons {
-    margin-top: 10px;
 }
 
 footer .social-icons a {
@@ -147,6 +66,87 @@ footer .social-icons a {
 
 footer .social-icons a:hover {
     color: #ddd;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item .card-header button {
+    text-align: left;
+    width: 100%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+}
+
+#faq h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#faq .card-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+#faq .card-header button {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+}
+
+#faq .card-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#faq .btn-link:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#faq .card-header button:focus {
+    outline: none;
 }
 
 .product-grid {
@@ -225,24 +225,6 @@ form.dark-mode input[type="submit"]:hover {
     background-color: #666;
 }
 
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#back-to-top:hover {
-    background-color: #555;
-}
-
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -263,27 +245,6 @@ form.dark-mode input[type="submit"]:hover {
 .testimonial.dark-mode {
     background-color: #2a2a2a;
     border-color: #444;
-}
-
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.carousel-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .services {
