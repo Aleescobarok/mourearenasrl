@@ -76,6 +76,35 @@ footer .social-icons a:hover {
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom for spacing between rows */
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
 }
 
 .card:hover {
@@ -83,102 +112,15 @@ footer .social-icons a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.faq-item .card-header button {
-    text-align: left;
-    width: 100%;
+.card:hover .card-img-top {
+    transform: scale(1.05);
 }
-
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#back-to-top:hover {
-    background-color: #555;
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-in.in-view {
-    opacity: 1;
-}
-
-#faq h2 {
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#faq .card-header {
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
-}
-
-#faq .card-header button {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-    width: 100%;
-    text-align: left;
-    background-color: transparent;
-    border: none;
-    padding: 15px;
-}
-
-#faq .card-body {
-    background-color: #fff;
-    border: 1px solid #ddd;
-}
-
-#faq .btn-link:hover {
-    text-decoration: none;
-    color: #007bff;
-}
-
-#faq .btn-link:focus, 
-#faq .btn-link.collapsed:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-#faq .btn-link:not(.collapsed) {
-    color: #007bff;
-}
-
-#faq .card-header button:focus {
-    outline: none;
-}
-
 
 .product-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 20px;
-    flex: 1 1 calc(33.333% - 40px);
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #f9f9f9;
-    transition: transform 0.3s ease, background-color 0.3s, border-color 0.3s;
 }
 
 .product img {
@@ -332,6 +274,54 @@ form.dark-mode input[type="submit"]:hover {
 
 .faq-item h3 {
     margin-bottom: 5px;
+}
+
+#faq h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#faq .card-header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+#faq .card-header button {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+}
+
+#faq .card-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#faq .btn-link:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#faq .btn-link:focus, 
+#faq .btn-link.collapsed:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#faq .btn-link:not(.collapsed) {
+    color: #007bff;
+}
+
+#faq .card-header button:focus {
+    outline: none;
 }
 
 .fade-in {
