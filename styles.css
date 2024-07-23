@@ -119,6 +119,7 @@ footer .social-icons a:hover {
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #faq .card-header {
@@ -133,6 +134,9 @@ footer .social-icons a:hover {
     font-size: 1.2em;
     width: 100%;
     text-align: left;
+    background-color: transparent;
+    border: none;
+    padding: 15px;
 }
 
 #faq .card-body {
@@ -145,9 +149,20 @@ footer .social-icons a:hover {
     color: #007bff;
 }
 
+#faq .btn-link:focus, 
+#faq .btn-link.collapsed:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#faq .btn-link:not(.collapsed) {
+    color: #007bff;
+}
+
 #faq .card-header button:focus {
     outline: none;
 }
+
 
 .product-grid {
     display: flex;
